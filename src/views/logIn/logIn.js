@@ -1,4 +1,4 @@
-import Header from '../header';
+import Header from '../elements/header';
 
 
 function Home() {

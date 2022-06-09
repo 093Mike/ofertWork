@@ -1,4 +1,6 @@
-import Header from '../header';
+import Header from '../elements/header';
+import Item from '../elements/items';
+
 
 
 function Home() {
@@ -18,7 +20,15 @@ function Home() {
                 
             </section>
             <section id="categories">
-
+                <h1>Muchas empresas confian en nosotros</h1>
+                <div id="findItem">
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                    <Item />
+                </div>
             </section>
         </>
 

@@ -1,12 +1,10 @@
 
-
-
 function Header() {
   return (
     <header>
         <div style={{display:"flex"}}>
             <div>
-                <h1>OFERTJOBS</h1>
+                <a href="/"><h1>OFERTJOBS</h1></a>
             </div>
             <div>
                 <p>Buscar Empleo</p>
@@ -20,7 +18,7 @@ function Header() {
                 <p>Unete</p>
             </div>
             <div>
-                <p>Iniciar sesión</p>
+                <a href="/login"><p>Iniciar sesión</p></a>
             </div>
         </div>
 

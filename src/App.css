@@ -11,13 +11,23 @@ header div p{
     padding: 0 1vw;
     text-align: center;
 }
-section{
-    height: 30em;
-}
+
 #home{
+    height: 30em;
     background-image: url("./img/foto1.jpg");
     background-position: bottom;
 }
+
+#logIn{
+    height: 70vh;
+    background-image: url("./img/foto1.jpg");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #home div{
     background-color: rgba(153, 135, 135, 0.5);
     width: 100%;
@@ -62,14 +72,11 @@ section{
     width: 70%;
 }
 
-#item{
-    margin: 1em;
-    width: 95%;
-    height: 20em;
-    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(153, 135, 135);
+    text-align: center;
+    color:#fff;
 }
-
-#item div{
-    height: 70%;
-}
-

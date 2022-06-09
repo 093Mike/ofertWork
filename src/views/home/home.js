@@ -1,3 +1,4 @@
+import Footer from '../elements/footer';
 import Header from '../elements/header';
 import Item from '../elements/items';
 
@@ -22,14 +23,14 @@ function Home() {
             <section id="categories">
                 <h1>Muchas empresas confian en nosotros</h1>
                 <div id="findItem">
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
-                    <Item />
+                    <Item title="Movistar" jobs={2} />
+                    <Item title="Vodafone"  jobs={14}/>
+                    <Item title="Bricomart"  jobs={1} />
+                    <Item title="MediaMark"  jobs={7}/>
+                    <Item title="MGA"  jobs={0}/>
                 </div>
             </section>
+            <Footer />
         </>
 
     );

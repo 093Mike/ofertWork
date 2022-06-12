@@ -17,18 +17,18 @@ let SubmitDiv = styled.div`
     
 `
 
-let Submit = styled.div`
-    width:min-content;
-    height:100%;
-    font-size: x-large;
-    background-color:aquamarine;
-    padding:1em 2em;
-    cursor:pointer;
 
+
+let Input = styled.input`
+    font-size:22px;
 `
 
-let Forms = styled.div`
-    background-color: #fff;
+
+function Search(props) {
+
+    let Forms = styled.div`
+    background-color: ${props.colores.backgroundWhite};
+    color: ${props.colores.colorTextWhite};
     width: 60vw;
     height: auto;
     display: flex;
@@ -37,15 +37,17 @@ let Forms = styled.div`
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-around;
-
+`
+let Submit = styled.div`
+    width:min-content;
+    height:100%;
+    font-size: x-large;
+    background-color: ${props.colores.color1};
+    color:${props.colores.colorText1};
+    padding:1em 2em;
+    cursor:pointer;
 `
 
-let Input = styled.input`
-    font-size:22px;
-`
-
-
-function Search() {
     return (
         <Forms>
             <Labels>

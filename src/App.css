@@ -1,9 +1,4 @@
-header{
-    background-color: aquamarine;
-    padding: 1em 2vw;
-    display: flex;
-    justify-content: space-between;
-}
+
 header h1{
     margin: 2px 1em 0 0;
 }

@@ -16,10 +16,10 @@ let Log = styled.div`
     }
 `
 
-function Home() {
+function Home(props) {
     return (
         <>
-            <Header />
+            <Header colores={props.colores} changeMode={props.changeMode} />
             <section id="logIn">
                 <Log>
                     <h1>Log In</h1>

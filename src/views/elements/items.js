@@ -1,6 +1,5 @@
 import img2 from '../../img/foto2.jpg'
 import styled from '@emotion/styled'
-import { useState } from 'react'
 
 
 let Items = styled.div`
@@ -12,19 +11,7 @@ let Items = styled.div`
         box-shadow: 0px 0px 9px 1px rgb(32 32 32 / 25%);
     }
 `
-let ItemInfo = styled.div`
-    padding:1em;
-    background:rgb(255 255 255 / 40%);
-    transition:0.2s;
-    height:5em;
-    color:#000;
-    &:hover{
-        height:100%;
-        background:rgb(255 255 255 / 75%);
-        
 
-    }
-`
 
 
 let ItemOfert = styled.div`
@@ -46,15 +33,23 @@ let ImgItem = styled.div`
 `;
 
 function Item(props) {
-    const [isShown, setIsShown] = useState(false);
+
+    let ItemInfo = styled.div`
+    padding:1em;
+    background:${props.colores.backgroundItem1};
+    transition:0.2s;
+    height:5em;
+    color:${props.colores.colorTextWhite};
+    &:hover{
+        height:100%;
+        background:${props.colores.backgroundItem2};
+    }
+`
 
     return (
         <Items>
             <ImgItem>
-                <ItemInfo
-                    onMouseEnter={() => {setIsShown(true)}}
-                    onMouseLeave={() => {setIsShown(false)}}
-                >
+                <ItemInfo>
                     <h1>{props.title}</h1>
                     <ItemOfert>
                         <div>{props.numJobs}{props.numJobs !== 1 ? " ofertas"  : " oferta"} </div>

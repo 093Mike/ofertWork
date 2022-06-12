@@ -1,0 +1,21 @@
+{
+    "light":{
+        "color1":"#1572A1",
+        "colorText1": "#fff",
+        "colorTextWhite": "#000",
+        "colorTextBlack": "#fff",
+        "backgroundWhite" : "#fff",
+        "backgroundItem1" : "rgb(255 255 255 / 40%);",
+        "backgroundItem2" : "rgb(255 255 255 / 75%);"
+
+    },
+    "dark":{
+        "color1":"#1572A1",
+        "colorText1": "#fff",
+        "colorTextWhite": "#fff",
+        "colorTextBlack": "#000",
+        "backgroundWhite" : "#141414",
+        "backgroundItem1" : "rgb(0 0 0 / 40%)",
+        "backgroundItem2" : "rgb(0 0 0 / 75%)"
+    }
+}

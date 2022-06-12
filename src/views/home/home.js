@@ -4,45 +4,57 @@ import Header from '../elements/header';
 import Item from '../elements/items';
 import Search from '../elements/search';
 
-let TitleH1 = styled.h1`
-color: #fff;
-font-size: xxx-large;
-font-size: -webkit-xxx-large;
-`
 
 let FormDiv = styled.div`
-    background-color: rgba(153, 135, 135, 0.65);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+background-color: rgba(153, 135, 135, 0.65);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 `
 
-function Home() {
+
+
+function Home(props) {
+    let TitleH1 = styled.h1`
+    color:${props.colores.colorTextBlack};
+    font-size: xxx-large;
+    font-size: -webkit-xxx-large;
+    `
+    let SectionCategories = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em 0;
+    text-align: center;
+    align-items: center;
+    background-color: ${props.colores.backgroundWhite};
+    color: ${props.colores.colorTextWhite};
+    `
 
 
     return (
         <>
-            <Header />
+            <Header colores={props.colores} changeMode={props.changeMode} />
             <section id="home">
                 <FormDiv>
                     <TitleH1>Encuentra el trabajo de tus sueños.</TitleH1>
-                    <Search />
+                    <Search colores={props.colores} />
                 </FormDiv>
                 
             </section>
-            <section id="categories">
+            <SectionCategories id="categories">
                 <h1>Muchas empresas confian en nosotros</h1>
                 <div id="findItem">
-                    <Item title="Movistar" numJobs={2} />
-                    <Item title="Vodafone" numJobs={14} />
-                    <Item title="Bricomart" numJobs={1} />
-                    <Item title="MediaMark" numJobs={7} />
-                    <Item title="MGA" numJobs={0}  />
+                    <Item title="Movistar" numJobs={2} colores={props.colores} />
+                    <Item title="Vodafone" numJobs={14} colores={props.colores} />
+                    <Item title="Bricomart" numJobs={1} colores={props.colores} />
+                    <Item title="MediaMark" numJobs={7} colores={props.colores} />
+                    <Item title="MGA" numJobs={0}  colores={props.colores} />
                 </div>
-            </section>
+            </SectionCategories>
             <Footer />
         </>
 

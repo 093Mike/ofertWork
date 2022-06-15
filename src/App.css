@@ -13,16 +13,6 @@ header div p{
     background-position: bottom;
 }
 
-#logIn{
-    height: 70vh;
-    background-image: url("./img/foto1.jpg");
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 #categories{
     display: flex;

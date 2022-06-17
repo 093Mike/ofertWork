@@ -1,23 +1,17 @@
-import styled from '@emotion/styled';
+//import styled from '@emotion/styled';
+import Footer from '../elements/footer';
+import Header from '../elements/header';
 
 
 
-function Pro(props) {
+function Profile(props) {
     return (
         <>
             <Header colores={props.colores} changeMode={props.changeMode} />
-            <section id="logIn">
-                <Log>
-                    <h1>Log In</h1>
-                    <input></input>
-                    <input></input>
-                    <div></div>
-                </Log>
-            </section>
             <Footer/>
         </>
 
     );
 }
 
-export default Login;
+export default Profile;

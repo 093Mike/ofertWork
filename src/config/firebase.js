@@ -1,6 +1,6 @@
 import * as firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
+import * as firebaseAuth from "firebase/auth";
+import * as firebaseDB from "firebase/firestore";
 import "firebase/storage";
 
 // Import the functions you need from the SDKs you need
@@ -22,9 +22,12 @@ const firebaseConfig = {
 class Firebase {
     constructor() {
       try {
-        initializeApp(firebaseConfig);
+        this.app = initializeApp(firebaseConfig);
     } catch (r) {}
       this.firebase = firebase;
+      this.firebaseAuth = firebaseAuth;
+      this.firebaseDBGet= firebaseDB.getFirestore(this.app);
+      this.firebaseDB = firebaseDB;
     }
   }
   
